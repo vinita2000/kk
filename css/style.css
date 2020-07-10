@@ -1,69 +1,59 @@
-body
+#top-box
 {
-    background-color: white;
-    font-family: 'Merriweather Sans', sans-serif;
-
-
+    background-color:white;
+    padding: 3% 15%;
+    border:1px solid black;
 }
-.all-scroll 
+body{
+
+    font-family:montserrat,sans-serif;
+}
+div
 {
-    cursor: all-scroll;
+    background:transparent;
 }
-
-p
+.xbody
+{
+    display:table;
+    width: 100%;
+    padding: 3% ;
+}
+.xlist
+{
+    display:table-cell;
+    vertical-align:top;
+    width: 300px;
+    background-color:lightgray;
+}
+.heading
+{
+    font-size:20px;
+    margin-top: 30px;
+}
+.option
 {
 
-    color:grey;
+    font-size:18px;
+    color:darkgray;
+    padding: 4% 4%;
+    border:1px solid darkgray;
+    cursor:pointer;
+    font-family: montserrat,sans-serif;
+    
+    
 }
-
-.drk
+.active
 {
-    color:black;
-    background-color:powderblue;
+    background-color:white;
 }
-.light
+.right
 {
-    color:lightgray;
-
+    display: table-cell;
+    vertical-align: top;
+    padding: 20px;
 }
-
-.col {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px; 
-  }
-
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .myButton 
-  {
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-	background-color:white;
-	border-radius:1px;
-	border:none;
-	display:inline-block;
-	cursor:pointer;
-	color:darkgray;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
-}
-.myButton:hover 
+.iconbox
 {
-	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-	background-color:#f6f6f6;
-}
-.myButton:active 
-{
-	position:relative;
-	top:1px;
+
+
 }
