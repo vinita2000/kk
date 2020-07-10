@@ -10,76 +10,134 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Task</title>
 </head>
+
+
 <body>
     
-    <div class="container" style="margin-top:150px">
-        
-            <div class="row">
-			
-    			<div class="col-md-6" style ="padding:10px">
+   <div class="container" id="top-box">XYZ</div>
 
-                    <button onclick="refunds()" class="myButton" id="refunds" >Refunds & Returns</button>
-                    <br>
-                    <a href="#" class="myButton" id="wallets" onclick ="wallets()">My bewakoof wallet</a>
-                    <br>
-                    <a href="#" class="myButton" id="account" onclick ="account()" >My Account</a>
-                    <br>
-                    <a href="#" class="myButton" id="tribe" onclick ="tribe()">Tribe Membership</a>
-                    <br>
-                    <a href="#" class="myButton"  id="query"onclick ="query()">I have another Query</a>
-                    <br>
-                    <a href="#" class="myButton" id="orders" onclick ="orders()">Go to my orders</a>
-                    <br>
-                    <!----<p class="all-scroll" id="refunds" onclick ="refunds()" >Refunds & Returns </p>
-                    <p class="all-scroll" id="wallets" onclick ="wallets()" >My bewakoof wallet</p>
-                    <p class="all-scroll" id="account" onclick ="account()" >My Account</p>
-                    <p class="all-scroll" id="tribe" onclick ="tribe()" >Tribe Membership</p>
-                    <p class="all-scroll" id="query" onclick ="query()">I have another Query</p>
-                    <p class="all-scroll" id="orders" onclick ="orders()">Go to my orders</p>-->
+    <div class="container">
+
+        <div class="col">
+            <div class="heading">Choose Payment Option</div>
+            <div class="xbody">
+                <div class="xlist">
+                    <div id="text-1" class="active option" onclick="function1()">Credit and Debit Cards</div>
+                    <div id="text-2" class="option" onclick="function2()">Net Banking</div>
+                    <div id="text-3" class="option" onclick="function3()">Wallets</div>
+                    <div id="text-4" class="option" onclick="function4()">Cash on Delivery </div>
+                    <div id="text-5" class="option" onclick="function5()">UPI</div>
 
                 </div>
 
-                <div class="col-md-4" style ="padding:10px">
-                    <div id="change-this">
-                    <h5 id="top">Refunds and Returns</h5>
-                    <p class="light" id="q1"> Frequently asked questions<p>
-                    <p class="" id="q2">How do I return my Product<p> 
-                    <p id="q3"> When will I get return<p> 
-                    <p class="light" id="top2"> More queries related to<p>
-                    <p id="q4">Return<p> 
-                    <p id="q5">Refunds<p> 
+                <div class="right">
+                    <div class="box1">
+
+                        <div class="boxwrapper col-md-4">
+
+                            <div class="inner">
+
+                               <ul class="banks">
+                                   <li>
+                                   <div class="iconbox">
+                                
+                                    <input class="form-control" type="text" placeholder="+ add payment method" readonly>
+                                    <br>
+                                    <br>
+                                        <form type="submit">
+                                            <div>
+                                            <span>
+                                                <img src="https://images.bewakoof.com/web/icici-1556185960.png">
+                                            </span>
+                                            <input type="radio" id="male" name="gender" value="male">
+                                            
+                                            <label for="male">ICICI</label>
+                                            </div>
+
+                                            <div>
+                                                <span>
+                                                    <img src="https://images.bewakoof.com/web/icici-1556185960.png">
+                                                </span>
+                                                <input type="radio" id="male" name="gender" value="male">
+                                                
+                                                <label for="male">ICICI</label>
+                                                </div>
+                                                <div>
+                                                    <span>
+                                                        <img src="https://images.bewakoof.com/web/icici-1556185960.png">
+                                                    </span>
+                                                    <input type="radio" id="male" name="gender" value="male">
+                                                    
+                                                    <label for="male">ICICI</label>
+                                                    </div>
+                                          </form> 
+
+
+                                          <form type="submit">
+                                            <div>
+                                            <span>
+                                                <img src="https://images.bewakoof.com/web/phonepe-1556185963.png">
+                                            </span>
+                                            <input type="radio" id="male" name="gender" value="male">
+                                            
+                                            <label for="male">Paytm</label>
+                                            </div>
+
+                                            <div>
+                                                <span>
+                                                    <img src="https://images.bewakoof.com/web/mobikwik-1556185968.png">
+                                                </span>
+                                                <input type="radio" id="male" name="gender" value="male">
+                                                
+                                                <label for="male">Paytm</label>
+                                                </div>
+                                                <div>
+                                                    <span>
+                                                        <img src="https://images.bewakoof.com/web/phonepe-1556185963.png">
+                                                    </span>
+                                                    <input type="radio" id="male" name="gender" value="male">
+                                                    
+                                                    <label for="male">Paytm</label>
+                                                    </div>
+                                          </form> 
+
+
+                                   </div>
+
+
+                                   </li>
+                               </ul>
+
+                               <div class="pay">
+                                   <h6>Total amount Payable</h6>
+                                    <button type="button" class="btn btn-primary btn-lg btn-block">Pay with Cash</button>
+                                </div>
+
+                                <div class="upi">
+                                    <input class="form-control" type="text" placeholder="+ add payment method" readonly>
+                                     <button type="button" class="btn btn-primary btn-lg btn-block">Anothe upi id</button>
+                                 </div>
+                            </div>
+
+                        </div>
+
                     </div>
-
                 </div>
-            
-            
+
             </div>
-        
-       
 
-        
-
-
+            
+        </div>
     </div>
 
-    <script>
-       
-        function refunds() 
-        {
-            document.getElementById("top").innerHTML = "Refunds and Returns";
-            document.getElementById("q1").innerHTML = "frequently asked questions";
-            document.getElementById("top").innerHTML = "Refunds and Returns";
-            document.getElementById("top").innerHTML = "Refunds and Returns";
-            document.getElementById("top").innerHTML = "Refunds and Returns";
-            document.getElementById("top").innerHTML = "Refunds and Returns";
-        
-        }
-       
-        </script>
 
+   <script src="index.js" charset="utf-8"></script>
         <!-- JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+
 </body>
 </html>
